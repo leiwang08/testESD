@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="getAreaCount" applyPrivilegeType="ANALYTIC_PRIVILEGE" dataCategory="CUBE" schemaVersion="2.3" defaultClient="$$client$$" visibility="reportingEnabled" outputViewType="Aggregation" calculationScenarioType="TREE_BASED" enforceSqlExecution="false">
+<descriptions defaultDescription="getAreaCount"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="ESD.allTables::queryData" type="DATA_BASE_TABLE">
+    <viewAttributes allViewAttributes="true"/>
+    <columnObject schemaName="ESD" columnObjectName="ESD.allTables::queryData"/>
+  </DataSource>
+  <DataSource id="ESD.allTables::areaData" type="DATA_BASE_TABLE">
+    <viewAttributes allViewAttributes="true"/>
+    <columnObject schemaName="ESD" columnObjectName="ESD.allTables::areaData"/>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:ProjectionView" id="queryD">
+    <viewAttributes>
+      <viewAttribute id="areaId"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="#ESD.allTables::queryData">
+      <mapping xsi:type="Calculation:AttributeMapping" target="areaId" source="areaId"/>
+    </input>
+  </calculationView>
+  <calculationView xsi:type="Calculation:ProjectionView" id="areaD">
+    <viewAttributes>
+      <viewAttribute id="id"/>
+      <viewAttribute id="area"/>
+      <viewAttribute id="tileName"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="#ESD.allTables::areaData">
+      <mapping xsi:type="Calculation:AttributeMapping" target="id" source="id"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="area" source="area"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="tileName" source="tileName"/>
+    </input>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1" joinType="inner">
+    <viewAttributes>
+      <viewAttribute id="areaId"/>
+      <viewAttribute id="area"/>
+      <viewAttribute id="tileName"/>
+    </viewAttributes>
+    <calculatedViewAttributes>
+      <calculatedViewAttribute id="sumCount" datatype="BIGINT" expressionLanguage="COLUMN_ENGINE">
+        <formula>1</formula>
+      </calculatedViewAttribute>
+    </calculatedViewAttributes>
+    <input node="#queryD">
+      <mapping xsi:type="Calculation:AttributeMapping" target="areaId" source="areaId"/>
+    </input>
+    <input node="#areaD">
+      <mapping xsi:type="Calculation:AttributeMapping" target="area" source="area"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="tileName" source="tileName"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="areaId" source="id"/>
+    </input>
+    <joinAttribute name="areaId"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Join_1">
+  <attributes>
+    <attribute id="area" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="area"/>
+      <keyMapping columnObjectName="Join_1" columnName="area"/>
+    </attribute>
+    <attribute id="module" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="module"/>
+      <keyMapping columnObjectName="Join_1" columnName="tileName"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures>
+    <measure id="sumCount" order="1" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="sumCount"/>
+      <measureMapping columnObjectName="Join_1" columnName="sumCount"/>
+    </measure>
+  </baseMeasures>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+  <localDimensions/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+    <shape expanded="true" modelObjectName="queryD" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="17" y="238"/>
+      <rectangleSize height="30" width="140"/>
+    </shape>
+    <shape expanded="true" modelObjectName="areaD" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="213" y="243"/>
+      <rectangleSize height="30" width="140"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="118" y="185"/>
+      <rectangleSize height="30" width="140"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

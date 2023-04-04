@@ -1,0 +1,3 @@
+schema = "ESD"; 
+query = "SELECT DISTINCT \"typeofQuery\"
+FROM \"ESD.allTables::queryData\"";

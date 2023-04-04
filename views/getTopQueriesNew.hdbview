@@ -1,0 +1,10 @@
+schema = "ESD";
+
+query = "SELECT A.\"errDesc\",A.\"moduleId\",count(1) as \"myCount\",B.\"name\" as \"moduleName\",
+B.\"mlName\"
+FROM 
+(\"ESD\".\"ESD.allTables::queryData\" A INNER JOIN \"ESD\".\"ESD.allTables::moduleData\" B
+ON A.\"moduleId\" = B.\"id\")
+
+GROUP BY A.\"errDesc\",A.\"moduleId\",B.\"name\",B.\"mlName\"
+ORDER BY count(1) DESC";

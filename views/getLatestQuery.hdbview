@@ -1,0 +1,3 @@
+schema = "ESD";
+
+query = "SELECT \"id\" FROM \"ESD.allTables::queryData\" WHERE CREATEDDATE = (SELECT MAX(CREATEDDATE) FROM \"ESD.allTables::queryData\")";

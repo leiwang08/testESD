@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="getModuleCount" applyPrivilegeType="ANALYTIC_PRIVILEGE" dataCategory="CUBE" schemaVersion="2.3" defaultClient="$$client$$" visibility="reportingEnabled" outputViewType="Aggregation" calculationScenarioType="TREE_BASED" enforceSqlExecution="false">
+<descriptions defaultDescription="getModuleCount"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="ESD.allTables::queryData" type="DATA_BASE_TABLE">
+    <viewAttributes allViewAttributes="true"/>
+    <columnObject schemaName="ESD" columnObjectName="ESD.allTables::queryData"/>
+  </DataSource>
+  <DataSource id="ESD.allTables::moduleData" type="DATA_BASE_TABLE">
+    <viewAttributes allViewAttributes="true"/>
+    <columnObject schemaName="ESD" columnObjectName="ESD.allTables::moduleData"/>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:ProjectionView" id="queryD">
+    <viewAttributes>
+      <viewAttribute id="moduleId"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="#ESD.allTables::queryData">
+      <mapping xsi:type="Calculation:AttributeMapping" target="moduleId" source="moduleId"/>
+    </input>
+  </calculationView>
+  <calculationView xsi:type="Calculation:ProjectionView" id="moduleD">
+    <viewAttributes>
+      <viewAttribute id="id"/>
+      <viewAttribute id="mlName"/>
+      <viewAttribute id="name"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="#ESD.allTables::moduleData">
+      <mapping xsi:type="Calculation:AttributeMapping" target="id" source="id"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="mlName" source="mlName"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="name" source="name"/>
+    </input>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1" joinType="inner">
+    <viewAttributes>
+      <viewAttribute id="name"/>
+      <viewAttribute id="JOIN$moduleId$id" hidden="true"/>
+    </viewAttributes>
+    <calculatedViewAttributes>
+      <calculatedViewAttribute id="sumCount" datatype="BIGINT" expressionLanguage="COLUMN_ENGINE">
+        <formula>1</formula>
+      </calculatedViewAttribute>
+    </calculatedViewAttributes>
+    <input node="#queryD">
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$moduleId$id" source="moduleId"/>
+    </input>
+    <input node="#moduleD">
+      <mapping xsi:type="Calculation:AttributeMapping" target="name" source="name"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$moduleId$id" source="id"/>
+    </input>
+    <joinAttribute name="JOIN$moduleId$id"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Join_1">
+  <attributes>
+    <attribute id="module" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="module"/>
+      <keyMapping columnObjectName="Join_1" columnName="name"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures>
+    <measure id="sumValue" order="1" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="sumValue"/>
+      <measureMapping columnObjectName="Join_1" columnName="sumCount"/>
+    </measure>
+  </baseMeasures>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+  <localDimensions/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+    <shape expanded="true" modelObjectName="queryD" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="22" y="244"/>
+      <rectangleSize height="30" width="140"/>
+    </shape>
+    <shape expanded="true" modelObjectName="moduleD" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="231" y="248"/>
+      <rectangleSize height="30" width="140"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="135" y="194"/>
+      <rectangleSize height="30" width="140"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

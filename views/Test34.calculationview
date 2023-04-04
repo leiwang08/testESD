@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="Test34" applyPrivilegeType="ANALYTIC_PRIVILEGE" dataCategory="DEFAULT" schemaVersion="2.3" defaultClient="$$client$$" visibility="internal" calculationScenarioType="SCRIPT_BASED" scriptParametersCaseSensitive="true" enforceSqlExecution="false">
+<descriptions defaultDescription="Test34"/>
+<defaultSchema schemaName="ESD"/>
+<localVariables>
+  <variable id="SEARCHSTRING" parameter="true">
+    <descriptions defaultDescription="SEARCHSTRING"/>
+    <variableProperties datatype="VARCHAR" length="200" mandatory="true">
+      <valueDomain type="empty"/>
+      <selection/>
+      <defaultRange/>
+    </variableProperties>
+  </variable>
+</localVariables>
+<variableMappings/>
+<dataSources/>
+<calculationViews>
+  <calculationView xsi:type="Calculation:SqlScriptView" id="Script_View">
+    <viewAttributes>
+      <viewAttribute id="BETTERSENTENCE" datatype="NVARCHAR" length="200"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <localVariable>#SEARCHSTRING</localVariable>
+    <definition>/********* Begin Procedure Script ************/ 
+BEGIN 
+--   var_out = select 1 as COL from DUMMY; 
+   var_out = SELECT  &quot;betterSentence&quot; AS BETTERSENTENCE
+		FROM &quot;ESD&quot;.&quot;ESD.allTables::searchData&quot;
+		WHERE CONTAINS(
+				&quot;queryData&quot;, 
+				:SEARCHSTRING, 
+				FUZZY(
+					0.8, 
+					'similarCalculationMode=substringsearch'
+				)
+			);
+END /********* End Procedure Script **********/</definition>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Script_View">
+  <attributes>
+    <attribute id="BETTERSENTENCE" key="true" order="1" semanticType="empty">
+      <keyMapping columnObjectName="Script_View" columnName="BETTERSENTENCE"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/></logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario> 

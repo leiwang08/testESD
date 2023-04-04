@@ -1,0 +1,12 @@
+schema = "ESD"; 
+query = "SELECT A.*,B.\"statusDesc\",C.\"name\" AS \"module\",D.\"area\",E.\"RequestNumber\",E.\"Status\" AS \"RemedyStatus\"
+FROM \"ESD.allTables::queryData\"
+A INNER JOIN \"ESD.allTables::statusData\" B 
+ON A.\"statusId\" = B.\"statusId\"
+INNER JOIN \"ESD.allTables::moduleData\" C
+ON A.\"moduleId\" = C.\"id\"
+INNER JOIN \"ESD.allTables::areaData\" D
+ON A.\"areaId\" = D.\"id\"
+LEFT JOIN \"ESD.phase2.allTables::RemedyStatus2\" E
+ON A.\"id\" = E.\"CustomerRequestNumber\"
+WHERE (SELECT count(1) FROM \"SYS\".\"GRANTED_ROLES\" WHERE ROLE_NAME like \'%ESD_Admin%\' AND GRANTEE = CURRENT_USER)>0";

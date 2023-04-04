@@ -1,0 +1,13 @@
+schema = "ESD";
+
+query = "SELECT A.\"id\",A.\"moduleId\",A.\"errDesc\",A.\"statusId\",A.\"LASTUPDATEDDATE\",A.\"Title\",B.\"statusDesc\",C.\"name\" AS \"module\",D.\"RequestNumber\",D.\"Status\" AS \"RemedyStatus\",
+D.\"Ops_Cat_Tier_1\",D.\"Ops_Cat_Tier_2\",D.\"Ops_Cat_Tier_3\",D.\"Incident_type\",D.\"Impact\",
+D.\"Urgency\",D.\"Work_Info_Notes\",D.\"Work_Info_Summary\"
+FROM \"ESD.allTables::queryData\" A 
+INNER JOIN \"ESD.allTables::statusData\" B
+ON A.\"statusId\" = B.\"statusId\"
+INNER JOIN \"ESD.allTables::moduleData\" C
+ON A.\"moduleId\" = C.\"id\"
+LEFT JOIN \"ESD.phase2.allTables::RemedyStatus2\" D
+ON A.\"id\" = D.\"CustomerRequestNumber\"
+WHERE A.\"userId\" = CURRENT_USER";

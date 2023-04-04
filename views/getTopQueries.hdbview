@@ -1,0 +1,11 @@
+schema = "ESD";
+
+query = "SELECT TOP 10 MAX(A.\"errDesc\") as \"errDesc\", MAX(A.\"Title\") as \"Title\",
+MAX(A.\"moduleId\") as \"moduleId\",count(1) as \"myCount\",MAX(B.\"name\") as \"moduleName\",
+MAX(B.\"mlName\") as \"mlName\",C.\"betterSentence\"
+FROM 
+((\"ESD\".\"ESD.allTables::queryData\" A INNER JOIN \"ESD\".\"ESD.allTables::moduleData\" B
+ON A.\"moduleId\" = B.\"id\")
+INNER JOIN \"ESD\".\"ESD.allTables::searchData\" C ON A.\"errDesc\" = C.\"queryData\")
+GROUP BY C.\"betterSentence\"
+ORDER BY \"myCount\" DESC";
