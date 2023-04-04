@@ -1,0 +1,6 @@
+id,name,mlName,icon,language,tooltip
+10000001,Finance,VG APP ERP - EVO - FIN,ic-Finance-normal.png,en,Finance will address queries in areas of MJUT
+10000002,Supply chain,VG APP ERP - EVO - SCM,ic-Supplychain-normal.png,en,Supply chain will address queries in areas of Shoping cart
+10000003,ARIBA,UAM,ic-ARIBA-normal.png,en,ARIBA will address queries in areas of ARIBA
+10000004,CONCUR,CONCUR,ic-CONCUR-normal.png,en,CONCUR will address queries in areas of CONCUR
+10000005,Others,OTHERS,ic-Others-normal.png,en,Others  will address generic queries

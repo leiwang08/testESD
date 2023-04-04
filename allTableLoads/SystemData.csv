@@ -1,0 +1,23 @@
+key,id,value,language
+1,AE1CLNT100NEW,Purchase Order,en
+2,AE1CLNT100NEW,Sales Order,en
+3,AE1CLNT100NEW,Goods Reciept,en
+4,AE1CLNT100NEW,Delivery,en
+5,AE1CLNT100NEW,Billing,en
+6,AE1CLNT100NEW,Quote,en
+7,AE1CLNT100NEW,RFQ,en
+8,AS1CLNT100_SWIZ,Shopping Cart,en
+9,AS1CLNT100_SWIZ,User Attribute,en
+10,AE1CLNT100NEW,Material Management,en
+11,AE1CLNT100NEW,Invoice,en
+12,AE1CLNT100NEW,Credit note,en
+13,AE1CLNT100NEW,Debit note,en
+14,AE1CLNT100NEW,Cash management,en
+15,AE1CLNT100NEW,Expense,en
+16,AC2CLNT100_SWIZ,EIC/FIC Related,en
+17,AE3CLNT100_SWIZ,3TM Related,en
+18,AM4CLNT100_SWIZ,MDG Related,en
+19,AE1CLNT100NEW,S4 Master Data Related,en
+20,AE9CLNT100_NSS,Warehouse Mgmt Related,en
+21,AG3CLNT100_SWIZ,GRC Related,en
+22,AE2CLNT100_INBOX,HR: Authorizations,en

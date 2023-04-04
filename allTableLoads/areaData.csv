@@ -1,0 +1,46 @@
+tileName,area,id,language
+Finance,Invoice,70000001,en
+Finance,Credit note,70000002,en
+Finance,Debit note,70000003,en
+Finance,Cash management,70000004,en
+Finance,Interface,70000005,en
+Finance,Roles & Authorization,70000006,en
+Finance,Approval/My Inbox,70000007,en
+Finance,MJUT,70000008,en
+Finance,Others,70000009,en
+Supply chain,Purchase Order,70000010,en
+Supply chain,Sales Order,70000011,en
+Supply chain,Goods Reciept,70000012,en
+Supply chain,Delivery,70000013,en
+Supply chain,Billing,70000014,en
+Supply chain,Quote,70000015,en
+Supply chain,RFQ,70000016,en
+Supply chain,Shopping Cart,70000017,en
+Supply chain,EIC/FIC Role Assignment,70000018,en
+Supply chain,Material Management,70000019,en
+Supply chain,Roles & Authorization,70000020,en
+Supply chain,Approval/My Inbox,70000021,en
+Supply chain,Rule Maintenance,70000022,en
+Supply chain,Others,70000023,en
+ARIBA,Purchase Order,70000024,en
+ARIBA,Goods Reciept,70000025,en
+ARIBA,Vendor sourcing,70000026,en
+ARIBA,Master data,70000027,en
+ARIBA,Purchase Requisation,70000028,en
+ARIBA,Roles & Authorization,70000029,en
+ARIBA,Approval/My Inbox,70000030,en
+ARIBA,Other,70000031,en
+CONCUR,Expense,70000032,en
+CONCUR,Travel,70000033,en
+CONCUR,Roles & Authorization,70000034,en
+CONCUR,Approval/My Inbox,70000035,en
+CONCUR,Others,70000036,en
+Success Factor,Time off,70000037,en
+Success Factor,TimeSheet,70000038,en
+Success Factor,Org Structure,70000039,en
+Success Factor,Employee data,70000040,en
+Success Factor,PD,70000041,en
+Success Factor,Compensation,70000042,en
+Success Factor,Roles & Authorization,70000043,en
+Success Factor,Approval/My Inbox,70000044,en
+Success Factor,Others,70000045,en

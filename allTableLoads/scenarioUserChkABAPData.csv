@@ -1,0 +1,7 @@
+role,entitySet
+ESD_ONBEHALF,UserAttributeSet
+ESD_ONBEHALF,UserMissingAuthSet
+ESD_ONBEHALF,UserPwdResetSet
+ESD,UserAttributeSet
+ESD,UserMissingAuthSet
+ESD,UserPwdResetSet
