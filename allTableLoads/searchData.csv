@@ -1,0 +1,175 @@
+queryData,id,moduleId,betterSentence,title
+showing error No authorization,1000001,10000002,Authorization Issue,RoleAssign
+Need role authorization,1000002,10000002,Authorization Issue,RoleAssign
+Role missing,1000003,10000002,Authorization Issue,RoleAssign
+Role visible,1000004,10000002,Authorization Issue,RoleAssign
+Add user team,1000005,10000002,Authorization Issue,RoleAssign
+Role accessible,1000006,10000002,Authorization Issue,RoleAssign
+Role assignment,1000007,10000002,Authorization Issue,RoleAssign
+Queue assignment,1000008,10000002,Authorization Issue,RoleAssign
+role visible user,1000009,10000002,Authorization Issue,RoleAssign
+Assign agent team,1000010,10000002,Assign user to team,User Attribute
+team queue visible,1000011,10000002,Assign user to team,User Attribute
+User able view role,1000012,10000002,Assign user to team,User Attribute
+My password expired,1000013,10000002,Authorization Issue,RoleAssign
+team ticket visible,1000014,10000002,Assign user to team,User Attribute
+Role assignment user,1000015,10000002,Authorization Issue,RoleAssign
+Agent able view role,1000016,10000002,Assign user to team,User Attribute
+Please Add user team,1000017,10000002,Assign user to team,User Attribute
+Access required team,1000018,10000002,Assign user to team,User Attribute
+Please add user team,1000019,10000002,Assign user to team,User Attribute
+User need access trx,1000020,10000002,Assign user to team,User Attribute
+Business role visible,1000021,10000002,Assign user to team,User Attribute
+User able access role,1000022,10000002,Assign user to team,User Attribute
+Agent need access team,1000023,10000002,Assign user to team,User Attribute
+Agent need access role,1000024,10000002,Assign user to team,User Attribute
+Assign team queue user,1000025,10000002,Assign user to team,User Attribute
+Agent able view tickets,1000026,10000002,Assign user to team,User Attribute
+Role assignment missing,1000027,10000002,Authorization Issue,RoleAssign
+Missing role assignment,1000028,10000002,Assign user to team,User Attribute
+Business role accessible,1000029,10000002,Assign user to team,User Attribute
+Agent ID assignment team,1000030,10000002,Assign user to team,User Attribute
+Not able see team tickets,1000031,10000002,Assign user to team,User Attribute
+Add user team (team name),1000032,10000002,Assign user to team,User Attribute
+Team queue assignment user,1000033,10000002,Assign user to team,User Attribute
+I want access team tickets,1000034,10000002,Assign user to team,User Attribute
+Kindly assign team user ID,1000035,10000002,Assign user to team,User Attribute
+Not able see team name list,1000036,10000002,Assign user to team,User Attribute
+I want user ID assigned team,1000037,10000002,Assign user to team,User Attribute
+user password reset required,1000038,10000002,Authorization Issue,RoleAssign
+I want get team assigned user,1000039,10000002,Assign user to team,User Attribute
+Not able create shopping cart,1000040,10000002,Issue with shopping cart creation,User Attribute
+Auth issue team ticket display,1000041,10000002,Assign user to team,User Attribute
+I want see ticket assigned team,1000042,10000002,Assign user to team,User Attribute
+User facing Authorization issue,1000043,10000002,Authorization Issue,RoleAssign
+Authorization issue team display,1000044,10000002,Assign user to team,User Attribute
+Please add user team (team name),1000045,10000002,Assign user to team,User Attribute
+Access required team (team name),1000046,10000002,Assign user to team,User Attribute
+missing role role assignment user,1000047,10000002,Assign user to team,User Attribute
+Please Add/Remove user team member,1000048,10000002,Assign user to team,User Attribute
+Missing authorization view tickets,1000049,10000002,Assign user to team,User Attribute
+I missing authorization access team,1000050,10000002,Assign user to team,User Attribute
+Please Add user(Team lead) team (team name),1000051,10000002,Assign user to team,User Attribute
+Please Add/remove user team member (analyst),1000052,10000002,Assign user to team,User Attribute
+Need role authorization,1000053,10000002,Authorization Issue,RoleAssign
+Need role perform actions,1000054,10000002,Authorization Issue,RoleAssign
+Need new password system,1000055,10000002,Authorization Issue,RoleAssign
+Need password change,1000056,10000002,Authorization Issue,RoleAssign
+Need access create shopping cart catalog Unable find catalog creating shopping cart,1000057,10000002,Issue with shopping cart creation,User Attribute
+Need access create shopping cart location Unable find location creating shopping cart,1000058,10000002,Issue with shopping cart creation,User Attribute
+Unable find catalog creating shopping cart,1000059,10000002,Issue with shopping cart creation,User Attribute
+Need access create shopping cart product category Unable find product category creating shopping cart,1000060,10000002,Issue with shopping cart creation,User Attribute
+Need access create shopping cart plant Unable find plant creating shopping cart,1000061,10000002,Issue with shopping cart creation,User Attribute
+Need access create shopping cart company Unable find company creating shopping cart,1000062,10000002,Issue with shopping cart creation,User Attribute
+Can't create shopping cart company code,1000063,10000002,Issue with shopping cart creation,User Attribute
+Can't create SC product category,1000064,10000002,Issue with shopping cart creation,User Attribute
+Can't create SC loaction,1000065,10000002,Issue with shopping cart creation,User Attribute
+Add plant user attributes,1000066,10000002,Missing user attributes,User Attribute
+Add material group user attributes,1000067,10000002,Missing user attributes,User Attribute
+Showing error Role available,1000068,10000002,Missing user attributes,User Attribute
+Request storage location creation existing client,1000069,10000002,Missing user attributes,User Attribute
+please create new storage location plant germany,1000070,10000002,Create storage location,User Attribute
+Plant I09S need new storage location,1000071,10000002,Create storage location,User Attribute
+Plant de01 need new storage location,1000072,10000002,Create storage location,User Attribute
+plant - create new standard new storage location,1000073,10000002,Create storage location,User Attribute
+Need user assigned Team Not able view team user,1000074,10000002,Assign user to team,User Attribute
+Issue raising SC getting attached error Select location assigned plant chosen Issue raising SC,1000075,10000002,Missing user attributes,User Attribute
+I want update user attributes,1000076,10000002,Missing user attributes,User Attribute
+I want update user attributes,1000077,10000002,Missing user attributes,User Attribute
+I unbale shopping cart Germany company code,1000078,10000002,Issue with shopping cart creation,User Attribute
+I unbale shopping cart Germany company code,1000079,10000002,Issue with shopping cart creation,User Attribute
+I able create shopping cart user ID code,1000080,10000002,Issue with shopping cart creation,User Attribute
+Error creating shopping cart,1000081,10000002,Issue with shopping cart creation,User Attribute
+Add new company code Shopping Carts required day day activity AS1273 Project Manager,1000082,10000002,Issue with shopping cart creation,User Attribute
+delink trading contract,1000083,10000002,Delink TC,TC delete
+I want relink TC,1000084,10000002,Relink TC,TC relink
+I want delete TC,1000085,10000002,Delink TC,TC delete
+Kindly provide access tcode,1000086,10000002,Request for Tcode access,RoleAssign
+User need access tcode,1000087,10000002,Request for Tcode access,RoleAssign
+want delink trading contract,1000088,10000002,Delink TC,TC delete
+Request tcode access,1000089,10000002,Request for Tcode access,RoleAssign
+My id locked,1000090,10000002,Authorization Issue,RoleAssign
+How create Shopping cart,1000091,10000002,Issue with shopping cart creation,User Attribute
+want delink TC,1000092,10000002,Delink TC,TC delete
+authorized access,1000093,10000002,Authorization Issue,RoleAssign
+don’t link tc,1000094,10000002,Delink TC,TC delete
+want delink multiple trading contract,1000095,10000002,Delink TC,TC delete
+I need create storage location plant Creation standard storage location plant,1000096,10000002,Create storage location,User Attribute
+relink TC,1000097,10000002,Relink TC,TC relink
+want update PO2,1000098,10000002,Relink TC,TC relink
+Kindly suggest authorization,1000099,10000002,Authorization Issue,RoleAssign
+Please delink trading contract PO1 PO2,1000100,10000002,Delink TC,TC delete
+want relink PO1 PO2,1000101,10000002,Relink TC,TC relink
+don’t delete tc,1000102,10000002,,title
+don’t relink tc,1000103,10000002,,title
+Request provide missing role,1000104,10000002,Authorization Issue,RoleAssign
+don’t delink tc,1000105,10000002,,title
+ERROR NO AUTHORIZATION TO APPROVE SHOPPING CART,1000106,10000002,Authorization Issue,RoleAssign
+want relink PO1 SO PO2,1000107,10000002,Relink TC,TC relink
+I need reset password,1000108,10000002,Authorization Issue,RoleAssign
+Request provide authorization,1000109,10000002,Authorization Issue,RoleAssign
+link 7623847634 po1 9874292834,1000110,10000002,Relink TC,TC relink
+Request reset password,1000111,10000002,Authorization Issue,RoleAssign
+Kindly provide access transaction,1000112,10000002,Request for Tcode access,RoleAssign
+Kindly unlock user,1000113,10000002,Authorization Issue,RoleAssign
+authorization error sale order,1000114,10000002,Authorization Issue,RoleAssign
+Roles view shopping cart,1000115,10000002,Issue with shopping cart creation,User Attribute
+delete trading contract,1000116,10000002,,title
+Request help resetting password,1000117,10000002,Authorization Issue,RoleAssign
+need access,1000118,10000002,Authorization Issue,RoleAssign
+need authorization approve shopping cart,1000119,10000002,Authorization Issue,RoleAssign
+Authorization error view shopping cart,1000120,10000002,Authorization Issue,RoleAssign
+Delete relationship po2 po1,1000121,10000002,Delink TC,TC delete
+Request role name,1000122,10000002,Authorization Issue,RoleAssign
+I don’t authorization,1000123,10000002,,title
+please link PO1 SO PO2,1000124,10000002,Relink TC,TC relink
+User need access transaction,1000125,10000002,Request for Tcode access,RoleAssign
+delink TC mentioned excel,1000126,10000002,Delink TC,TC delete
+I cannot login,1000127,10000002,Authorization Issue,RoleAssign
+Request missing role name,1000128,10000002,Authorization Issue,RoleAssign
+create shopping cart,1000129,10000002,Issue with shopping cart creation,User Attribute
+Kindly provide authorization,1000130,10000002,Authorization Issue,RoleAssign
+delink TCs,1000131,10000002,Delink TC,TC delete
+want relink TC,1000132,10000002,Relink TC,TC relink
+user password reset required,1000133,10000002,Authorization Issue,RoleAssign
+want delink PO1 PO2,1000134,10000002,Delink TC,TC delete
+authorization missing,1000135,10000002,Authorization Issue,RoleAssign
+add company code user ID,1000136,10000002,Assign user to team,User Attribute
+User cannot see tcode,1000137,10000002,Request for Tcode access,RoleAssign
+need relink tradin contract,1000138,10000002,Relink TC,TC relink
+Kindly provide access,1000139,10000002,Authorization Issue,RoleAssign
+I authorization,1000140,10000002,Password reset,Password Reset
+recreate TC PO1 SO PO2,1000141,10000002,Relink TC,TC relink
+Request unlock id,1000142,10000002,Authorization Issue,RoleAssign
+Kindly suggest access,1000143,10000002,Authorization Issue,RoleAssign
+I want reset password,1000144,10000002,Password reset,Password Reset
+relink PO1 SO PO2,1000145,10000002,Relink TC,TC relink
+please relink trading contract PO1 PO2,1000146,10000002,Relink TC,TC relink
+User cannot see approve tab,1000147,10000002,Authorization Issue,RoleAssign
+delink PO1 SO PO2,1000148,10000002,Delink TC,TC delete
+relink trading contract,1000149,10000002,Relink TC,TC relink
+Password reset,1000150,10000002,Authorization Issue,RoleAssign
+My user locked,1000151,10000002,Password reset,Password Reset
+Request provide missing role detail,1000152,10000002,Password reset,Password Reset
+user unlock required,1000153,10000002,Password reset,Password Reset
+I missing role,1000154,10000002,Authorization Issue,RoleAssign
+please recreate trading contract PO1 PO2,1000155,10000002,Relink TC,TC relink
+Kindly suggest access tcode,1000156,10000002,Request for Tcode access,RoleAssign
+Authorization error approve shopping cart,1000157,10000002,Authorization Issue,RoleAssign
+change shopping cart,1000158,10000002,Issue with shopping cart creation,User Attribute
+Please provide access raise SC German plant,1000159,10000002,Missing user attributes,User Attribute
+want delink multiple TCs,1000160,10000002,Delink TC,TC delete
+I don’t want reset password,1000161,10000002,,title
+Add new storage location plant,1000162,10000002,Create storage location,User Attribute
+authorization error view purchase order,1000163,10000002,Authorization Issue,RoleAssign
+want recreate tradin contract,1000164,10000002,Relink TC,TC relink
+Please give VF_SRM_MDM_IT catalogue access,1000165,10000002,Authorization Issue,RoleAssign
+assign plant user ID,1000166,10000002,Missing user attributes,User Attribute
+I cant find GL account shopping cart,1000167,10000002,Issue with shopping cart creation,User Attribute
+authorized use,1000168,10000002,Authorization Issue,RoleAssign
+Please provide access PT00 plant,1000169,10000002,Request for Tcode access,RoleAssign
+add product category attribute,1000170,10000002,Missing user attributes,User Attribute
+assign company code,1000171,10000002,Missing user attributes,User Attribute
+need access Product category shopping cart creation,1000172,10000002,Missing user attributes,User Attribute
+How change shopping cart,1000173,10000002,Issue with shopping cart creation,User Attribute
+want add company code user ID,1000174,10000002,Missing user attributes,User Attribute
