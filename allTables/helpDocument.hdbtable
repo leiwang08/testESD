@@ -1,0 +1,14 @@
+table.schemaName = "ESD";
+table.tableType = COLUMNSTORE;
+table.columns =
+ [
+    {name = "id";       sqlType = BIGINT; nullable = false;},
+    {name = "type";     sqlType = NVARCHAR; length = 120; nullable = true;},
+    {name = "header";   sqlType = NVARCHAR; length = 120; nullable = true;},
+    {name="subheader";  sqlType = NVARCHAR; length=120; nullable=true;},
+	{name = "footer";   sqlType = NVARCHAR; length = 120; nullable = true;},
+	{name = "icon";     sqlType = NVARCHAR; length = 120; nullable = false;},
+	{name = "link";     sqlType = NVARCHAR; length = 5000;  nullable = true;},
+	{name = "tooltip";  sqlType = NVARCHAR; length = 300;  nullable = true;}
+ ];
+table.primaryKey.pkcolumns = ["id"];

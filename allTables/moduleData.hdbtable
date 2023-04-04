@@ -1,0 +1,15 @@
+table.schemaName = "ESD";
+table.tableType = COLUMNSTORE;
+table.columns =
+ [
+    {name = "id";       sqlType = BIGINT; nullable = false;},
+	{name = "name";     sqlType = NVARCHAR; length = 120; nullable = false;},
+	{name = "mlName";   sqlType = NVARCHAR; length = 120; nullable = false;},
+	{name = "icon";     sqlType = NVARCHAR; length = 120; nullable = false;},
+	{name = "language"; sqlType = NVARCHAR; length = 10;  nullable = true;},
+	{name = "tooltip";  sqlType = NVARCHAR; length = 300;  nullable = true;} 
+ ];
+table.primaryKey.pkcolumns = ["id"];
+
+
+

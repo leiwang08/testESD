@@ -1,0 +1,11 @@
+table.schemaName = "ESD";
+table.tableType = COLUMNSTORE;
+table.columns =
+ [
+    {name = "statusId";     sqlType = NVARCHAR; length = 120; nullable = false;},
+    {name = "statusDesc";   sqlType = NVARCHAR; length = 220; nullable = false;}
+ ];
+table.primaryKey.pkcolumns = ["statusId"];
+
+
+

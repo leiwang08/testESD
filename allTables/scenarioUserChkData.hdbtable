@@ -1,0 +1,11 @@
+table.schemaName = "ESD";
+table.tableType = COLUMNSTORE;
+table.columns =
+ [
+	{name = "role";     sqlType = NVARCHAR; length = 120; nullable = false;},
+    {name = "entitySet";sqlType = NVARCHAR; length = 120; nullable = false;}
+ ];
+table.primaryKey.pkcolumns = ["role","entitySet"];
+
+
+

@@ -1,0 +1,14 @@
+table.schemaName = "ESD";
+table.tableType = COLUMNSTORE;
+table.columns =
+[
+    {name = "id";               sqlType = BIGINT; nullable = false;},
+    {name = "moduleId";         sqlType = BIGINT; nullable = true;},
+    {name = "betterSentence";    sqlType = NVARCHAR; length = 200; nullable = true;},
+    {name = "queryData";        sqlType = NVARCHAR; length = 200; nullable = false;},
+    {name = "title";            sqlType = NVARCHAR; length = 200; nullable = false;}
+ ];
+table.primaryKey.pkcolumns = ["id"];
+
+
+

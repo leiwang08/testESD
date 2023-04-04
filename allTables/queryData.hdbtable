@@ -1,0 +1,22 @@
+table.schemaName = "ESD";
+table.tableType = COLUMNSTORE;
+table.columns =
+ [
+    {name = "id";               sqlType = BIGINT; nullable = false;},
+	{name = "moduleId";           sqlType = BIGINT; nullable = false;},
+    {name = "areaId";             sqlType = BIGINT; nullable = true;},
+	{name = "statusId";         sqlType = NVARCHAR; length = 120;  nullable = false;},
+	{name = "errDesc";          sqlType = NVARCHAR; length = 500;  nullable = false;},
+	{name = "userId";           sqlType = NVARCHAR; length = 100;  nullable = false;},
+	{name = "userName";         sqlType = NVARCHAR; length = 200;  nullable = false;},
+	{name = "CREATEDDATE";      sqlType = TIMESTAMP; nullable = true;},
+	{name = "LASTUPDATEDDATE";  sqlType = TIMESTAMP; nullable = true;},
+	{name = "pendingOn";        sqlType = NVARCHAR; length = 200;  nullable = true;},
+	{name = "DUEDATE";          sqlType = TIMESTAMP; nullable = true;},
+	{name = "tagName";          sqlType = NVARCHAR; length = 120;  nullable = true;},
+	{name = "typeofQuery";      sqlType = NVARCHAR; length = 120;  nullable = true;},
+	{name = "mlResolution";     sqlType = NCLOB;    nullable = true;},
+	{name = "odataMethod";      sqlType = NVARCHAR; length = 120;  nullable = true;},
+	{name = "Title";            sqlType = NVARCHAR; length = 100;}
+ ];
+table.primaryKey.pkcolumns = ["id"];

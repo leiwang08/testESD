@@ -1,0 +1,13 @@
+table.schemaName = "ESD";
+table.tableType = COLUMNSTORE;
+table.columns =
+ [
+    {name = "tileName"; sqlType = NVARCHAR; length = 120; nullable = false;},
+	{name = "area";     sqlType = NVARCHAR; length = 120; nullable = false;},
+	{name = "id";       sqlType = BIGINT; nullable = false;},
+	{name = "language"; sqlType = NVARCHAR; length = 10;  nullable = true;}
+ ];
+table.primaryKey.pkcolumns = ["tileName","id"];
+
+
+
